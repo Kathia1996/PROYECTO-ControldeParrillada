@@ -1,0 +1,41 @@
+      <div class="login">
+        <br>
+        <table>
+          <thead>
+          </thead>
+          <tbody>
+            <tr>
+              <th><label>Usuario: </label></th>
+              <td><input type="text" name="usuario" placeholder="Usuario"></td>
+            </tr>
+            <tr>
+              <th><label>Contraseña: </label></th>
+              <td><input type="password" name="contraseña" placeholder="Contraseña" requiered></td>
+            </tr>
+            <tr >
+              <th colspan="2"><input type="submit" name="Ingresar"></th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+<h2>Vista Index</h2>
+
+<?php if(isset($this->clientes) && count($this->clientes)): ?>
+<table>
+
+    <?php for($i = 0; $i<count($this->clientes); $i++):?>
+        <tr>
+            <td><?php echo $this->clientes[$i]['idcliente'];?></td>
+            <td><?php echo $this->clientes[$i]['nombres_apellidos'];?></td>
+            <td><?php echo $this->clientes[$i]['telefono'];?></td>
+            <td><?php echo $this->clientes[$i]['direccion'];?></td>
+        </tr>
+    <?php endfor;?>
+</table>
+<?php else: ?>
+<p><strong>No hay clientes</strong></p>
+
+<?php endif; ?>
+
