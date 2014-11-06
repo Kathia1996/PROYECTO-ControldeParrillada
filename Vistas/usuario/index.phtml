@@ -1,1 +1,18 @@
 <h2>Vista Usuario</h2>
+
+<?php if(isset($this->usuarios) && count($this->usuarios)): ?>
+    <table>
+
+        <?php for($i = 0; $i<count($this->usuarios); $i++):?>
+            <tr>
+                <td><?php echo $this->usuarios[$i]['idusuario'];?></td>
+                <td><?php echo $this->usuarios[$i]['nombres'];?></td>
+                <td><?php echo $this->usuarios[$i]['apellidos'];?></td>
+                <td><?php echo $this->usuarios[$i]['direccion'];?></td>
+            </tr>
+        <?php endfor;?>
+    </table>
+<?php else: ?>
+    <p><strong>No hay usuarios</strong></p>
+
+<?php endif; ?>

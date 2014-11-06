@@ -16,7 +16,7 @@ class usuarioControlador extends Controlador{
     public function index()
     {
         $usuario = $this->loadModel('usuario');
-        $this->_vista->clientes = $usuario->listar();
+        $this->_vista->usuarios = $usuario->listar();
         $this->_vista->titulo = 'Portada de Usuario';
         $this->_vista->renderizar('index','usuario');
     }
