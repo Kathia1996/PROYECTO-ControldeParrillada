@@ -13,7 +13,9 @@ class usuario extends Modelo{
     }
 
     public function listar(){
-        $cliente = $this->_db->query("select * from cliente");
-        return $cliente->fetchall();
+        $usuario = $this->_db->query("select * from cliente");
+        return $usuario->fetchall();
     }
+
+
 }

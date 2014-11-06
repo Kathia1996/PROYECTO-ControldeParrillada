@@ -20,12 +20,12 @@ class Vista
             array(
                 'id'=>'hola',
                 'titulo'=>'Hola',
-                'enlace'=>BASE_URL.'usuarios'
+                'enlace'=>BASE_URL.'hola'
             ),
             array(
-                'id'=>'kathia',
-                'titulo'=>'Kathia',
-                'enlace'=>BASE_URL.'kathia'
+                'id'=>'usuario',
+                'titulo'=>'Usuario',
+                'enlace'=>BASE_URL.'usuario'
             ),
             array(
                 'id'=>'reportes',
