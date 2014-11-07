@@ -39,3 +39,6 @@
             <?php endif; ?>
         </ul>
     </div>
+
+    <div id="content">
+        <div id="error"><?php if (isset($this->_error)) echo $this->_error; ?></div>

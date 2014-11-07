@@ -1,0 +1,49 @@
+<?php
+//echo $this->prueba;
+?>
+
+<p></p>
+
+<form id="form1" method="post" action="<?php echo BASE_URL; ?>usuario/nuevo">
+    <input type="hidden" name="guardar" value="1">
+
+    <p>Nombre</p>
+    <input type="text" name="nombres"
+           value="<?php if (isset($this->datos['nombres'])) echo $this->datos['nombres']; ?>"/>
+
+    <p>Apellidos: </p>
+    <input type="text" name="apellidos"
+           value="<?php if (isset($this->datos['apellidos'])) echo $this->datos['apellidos']; ?>"/>
+
+
+    <p>Direcciòn: </p>
+    <input type="text" name="direccion"
+           value="<?php if (isset($this->datos['direccion'])) echo $this->datos['direccion']; ?>"/>
+
+    <p>Correo: </p>
+    <input type="text" name="correo"
+           value="<?php if (isset($this->datos['correo'])) echo $this->datos['correo']; ?>"/>
+
+    <p>Telefono: </p>
+    <input type="text" name="telefono"
+           value="<?php if (isset($this->datos['telefono'])) echo $this->datos['telefono']; ?>"/>
+
+    <p>DNI: </p>
+    <input type="text" name="dni"
+           value="<?php if (isset($this->datos['dni'])) echo $this->datos['dni']; ?>"/>
+
+    <p>fecha nacimiento: </p>
+    <input type="text" name="fecha_nacimiento"
+           value="<?php if (isset($this->datos['fecha_nacimiento'])) echo $this->datos['fecha_nacimiento']; ?>"/>
+    <!--       
+    <p>IdDistrito </p>
+    <input type="text" name="iddistrito"
+           value="<?php //if (isset($this->datos['iddistrito'])) echo $this->datos['iddistrito']; ?>"/>
+
+    <p>IdLogin </p>
+    <input type="text" name="idlogin"
+           value="<?php //if (isset($this->datos['idlogin'])) echo $this->datos['idlogin']; ?>"/>
+         -->
+
+    <input type="submit" class="button" value="Guardar"/>
+</form>

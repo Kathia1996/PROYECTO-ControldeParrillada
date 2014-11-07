@@ -6,9 +6,11 @@
  * Time: 01:35 AM
  */
 ?>
-    <div id="pie">
-        Copyrigth<?php echo APP_COMPANY?>
-    </div>
+</div>
+
+<div id="pie">
+    Copyrigth<?php echo APP_COMPANY ?>
+</div>
 </div>
 </body>
 </html>
