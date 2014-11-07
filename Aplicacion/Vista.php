@@ -18,9 +18,9 @@ class Vista
                 'enlace'=>BASE_URL
             ),
             array(
-                'id'=>'hola',
-                'titulo'=>'Hola',
-                'enlace'=>BASE_URL.'hola'
+                'id'=>'cliente',
+                'titulo'=>'Cliente',
+                'enlace'=>BASE_URL.'cliente'
             ),
             array(
                 'id'=>'usuario',

@@ -22,20 +22,4 @@
 
 <h2>Vista Index</h2>
 
-<?php if(isset($this->clientes) && count($this->clientes)): ?>
-<table>
-
-    <?php for($i = 0; $i<count($this->clientes); $i++):?>
-        <tr>
-            <td><?php echo $this->clientes[$i]['idcliente'];?></td>
-            <td><?php echo $this->clientes[$i]['nombres_apellidos'];?></td>
-            <td><?php echo $this->clientes[$i]['telefono'];?></td>
-            <td><?php echo $this->clientes[$i]['direccion'];?></td>
-        </tr>
-    <?php endfor;?>
-</table>
-<?php else: ?>
-<p><strong>No hay clientes</strong></p>
-
-<?php endif; ?>
 

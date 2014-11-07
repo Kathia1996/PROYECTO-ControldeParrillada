@@ -10,9 +10,3 @@ define('BASE_URL', '/appa/');
 define('APP_NAME', 'Aplicacion Parrilladas');
 define('APP_SLOGAN', 'mi primer framework');
 define('APP_COMPANY', 'Nombre de la company: APPA');
-
-define('DB_HOST','localhost');
-define('DB_USER','root');
-define('DB_PASS','');
-define('DB_NAME','appa');
-define('DB_CHAR','utf8');

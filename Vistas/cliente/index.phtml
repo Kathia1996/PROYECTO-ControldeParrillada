@@ -1,0 +1,6 @@
+<ul >
+    <?php foreach ($this->clientes as $cliente) { ?>
+        <li><?php echo utf8_encode($cliente['nombres_apellidos']); ?></li>
+    <?php } ?>
+</ul>
+<p><a href="<?php BASE_VISTA; ?>cliente/nuevo">Agregar Cliente</a></p>
