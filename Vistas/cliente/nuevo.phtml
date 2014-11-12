@@ -1,20 +1,24 @@
 <h2>VISTA NUEVO CLIENTE</h2>
 
-<?php 
-//echo $this->prueba; ?>
+<?php
+//echo $this->prueba;
+?>
 
-<p> </p>
+<p></p>
 <form id="form1" method="post" action="<?php echo BASE_URL; ?>cliente/save">
     <p>Nombres y Apellidos: </p>
     <input type="text" name="nombres_apellidos" value=""/>
+
     <p>Telefono: </p>
     <input type="text" name="telefono" value=""/>
+
     <p>Direcciòn: </p>
-    <input type="text" name="direccion"  value=""/>
+    <input type="text" name="direccion" value=""/>
+
     <p>IdDistrito </p>
-    <select name="iddistrito" >
-    	<option value="1">Calzada</option>
+    <select name="iddistrito">
+        <option value="1">Calzada</option>
     </select>
-    
+
     <input type="submit" class="button" value="Guardar"/>
 </form>

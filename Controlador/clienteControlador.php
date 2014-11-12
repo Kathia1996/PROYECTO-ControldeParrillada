@@ -6,8 +6,9 @@
  * Time: 05:23 PM
  */
 
-class clienteControlador extends Controlador{
-    
+class clienteControlador extends Controlador
+{
+
     private $_cliente;
 
     public function __construct()
@@ -18,9 +19,10 @@ class clienteControlador extends Controlador{
 
     public function index()
     {
+        $this->_vista->titulo = 'Portada de Cliente';
         $datos = $this->_cliente->select();
         $this->_vista->clientes = $datos;
-        $this->_vista->renderizar('index','cliente');
+        $this->_vista->renderizar('index', 'cliente');
     }
 
     public function show($id)
@@ -29,22 +31,22 @@ class clienteControlador extends Controlador{
         exit;
     }
 
-    public function nuevo(){
-
+    public function nuevo()
+    {
         $this->_vista->titulo = 'Nuevo Cliente';
-        
-         $this->_vista->renderizar('nuevo', 'cliente');   
+        $this->_vista->renderizar('nuevo', 'cliente');
+    }
 
-        }
-         
-         public function save(){
-            $this->_cliente = $this->loadModel('cliente');
-            $this->_cliente->insert($_POST);
-            header('Location:'.BASE_URL.'/cliente');
-            echo "<script>alert('Se Ingreso Corectamente')</script>";
-
-        }       
-        
+    public function save()
+    {
+        $this->_cliente = $this->loadModel('cliente');
+        $this->_cliente->insert($_POST);
+        //headrer para que vuelva al la vista anterior
+        header('Location:' . BASE_URL . '/cliente');
+        echo "<script>alert('Se Ingreso Corectamente')</script>";
 
     }
+
+
+}
  

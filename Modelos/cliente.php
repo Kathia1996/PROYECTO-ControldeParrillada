@@ -24,7 +24,7 @@ class cliente extends ConsultasMYSQL
     public function insert($datos)
     { 
         $obj= new ConsultasMYSQL();
-        $columnas = $obj->leercampos('cliente'); 
+        $columnas = $obj->leercampos('cliente');
         $obj->insertar('cliente',$columnas,$datos);
         //return $datos;
     }

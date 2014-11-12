@@ -13,6 +13,26 @@
         <meta http-equiv="CONTENT-TYPE" content="text/html;charset=utf-8"/>
         <link href="<?php echo $_layoutParams['ruta_css']?>estilos.css" rel="stylesheet"  type="text/css"/>
 
+
+    <!-- cargamos los css -->
+    <?php if(isset($_params['css']) && count($_params['css'])): ?>
+        <?php for($i=0; $i < count($_params['css']); $i++): ?>
+
+            <link href="<?php echo $_params['css'][$i] ?>" type="text/css" rel="stylesheet" media="screen" />
+
+        <?php endfor; ?>
+    <?php endif; ?>
+
+    <!-- cargamos los js -->
+    <?php if(isset($_params['js']) && count($_params['js'])): ?>
+        <?php for($i=0; $i < count($_params['js']); $i++): ?>
+
+            <script src="<?php echo $_params['js'][$i] ?>" type="text/javascript"></script>
+
+        <?php endfor; ?>
+    <?php endif; ?>
+
+
     </head>
 <body>
 <div id="main">
